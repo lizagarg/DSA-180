@@ -1,3 +1,25 @@
+//brute force 
+class Solution {
+public:
+    void helper(TreeNode* root,vector<int>&ans){
+        if(!root) return;
+        helper(root->left,ans);
+        ans.push_back(root->val);
+        helper(root->right,ans);
+    }
+    bool findTarget(TreeNode* root, int k) {
+        vector<int>ans;
+        helper(root,ans);
+        int start=0,end=ans.size()-1;
+        while(start<end){
+            if(ans[start]+ans[end]==k)return true;
+            else if(ans[start]+ans[end]<k)start++;
+            else end--;
+        }
+        return false;
+    }
+};
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
