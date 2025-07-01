@@ -15,3 +15,18 @@ public:
         return climb(dp,n); 
     }
 };
+
+/*
+TC: O(n)
+SC: O(n) for dp array + O(n) for recursion stack
+This is a top-down approach using memoization.
+
+if tabulation is used then
+TC: O(n)
+SC: O(n) for dp array
+This is a bottom-up approach using tabulation.
+
+if space optimization is used then
+TC: O(n)
+SC: O(1) because only 2 variables are used to store previous results.
+*/

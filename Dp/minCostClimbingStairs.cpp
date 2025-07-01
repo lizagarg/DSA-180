@@ -19,3 +19,5 @@ public:
         return min(helper(n - 1, cost, dp), helper(n - 2, cost, dp));
     }
 };
+
+// redundant

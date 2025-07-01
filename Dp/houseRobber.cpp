@@ -15,3 +15,8 @@ public:
         return solve(size-1,size,nums,dp);
     }
 };
+
+/*
+TC: O(n) 
+SC: O(n) for dp array + O(n) for recursion stack
+*/
