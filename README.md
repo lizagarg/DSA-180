@@ -1,1 +1,1 @@
-#Consistently practicing problem-solving
+Consistently practicing problem-solving
